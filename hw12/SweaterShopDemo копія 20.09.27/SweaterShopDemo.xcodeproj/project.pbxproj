@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA171F8A28AF9DEA00C4C587 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA171F8928AF9DEA00C4C587 /* ContentView.swift */; };
+		FA171F9228B2BAEA00C4C587 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA171F9128B2BAE900C4C587 /* AccountManager.swift */; };
+		FA171F9428B2C97F00C4C587 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA171F9328B2C97F00C4C587 /* AuthModel.swift */; };
+		FA171F9628B2D5B900C4C587 /* MainTabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA171F9528B2D5B900C4C587 /* MainTabBarModel.swift */; };
+		FA171F9828B37C6000C4C587 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA171F9728B37C6000C4C587 /* UserModel.swift */; };
+		FA171F9A28B37D9F00C4C587 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA171F9928B37D9F00C4C587 /* DatabaseManager.swift */; };
+		FA171F9C28B393AE00C4C587 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA171F9B28B393AB00C4C587 /* ProfileViewModel.swift */; };
+		FA7223D42880766000602F99 /* Clients.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7223D32880766000602F99 /* Clients.swift */; };
+		FA7223D62880769B00602F99 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7223D52880769B00602F99 /* DataManager.swift */; };
+		FA7223D82880899A00602F99 /* ConteinerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7223D72880899A00602F99 /* ConteinerView.swift */; };
+		FA7223DA288089F900602F99 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7223D9288089F900602F99 /* Session.swift */; };
+		FA72242428816C0A00602F99 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72242328816C0A00602F99 /* TabBar.swift */; };
+		FA72242628816CAA00602F99 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72242528816CAA00602F99 /* AccountView.swift */; };
+		FA7FCEB72874724700814D89 /* SweaterShopDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FCEB62874724700814D89 /* SweaterShopDemoApp.swift */; };
+		FA7FCEB92874724700814D89 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FCEB82874724700814D89 /* MainPage.swift */; };
+		FA7FCEBB2874724900814D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7FCEBA2874724900814D89 /* Assets.xcassets */; };
+		FA7FCEBE2874724900814D89 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7FCEBD2874724900814D89 /* Preview Assets.xcassets */; };
+		FA7FCEC628747E2300814D89 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FCEC528747E2300814D89 /* Product.swift */; };
+		FA7FCEC9287481FF00814D89 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FCEC8287481FF00814D89 /* ProductCard.swift */; };
+		FA7FCECC2874B39000814D89 /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FCECB2874B39000814D89 /* CartButton.swift */; };
+		FA7FCECE2874B64A00814D89 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FCECD2874B64A00814D89 /* CartView.swift */; };
+		FA7FCED02874B73B00814D89 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FCECF2874B73B00814D89 /* CartManager.swift */; };
+		FA7FCED22874BAE800814D89 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FCED12874BAE800814D89 /* ProductRow.swift */; };
+		FA8016132880590C00D31B2C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FA8016122880590C00D31B2C /* FirebaseAuth */; };
+		FA8016152880590C00D31B2C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FA8016142880590C00D31B2C /* FirebaseFirestore */; };
+		FA80161728805A5700D31B2C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA80161628805A5700D31B2C /* GoogleService-Info.plist */; };
+		FA8075F1287C6E2700CF6237 /* CertainSweater.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8075F0287C6E2600CF6237 /* CertainSweater.swift */; };
+		FA8075F3287CA3F100CF6237 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8075F2287CA3F100CF6237 /* CommentView.swift */; };
+		FA8075F5287CA4BB00CF6237 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8075F4287CA4BB00CF6237 /* Extensions.swift */; };
+		FA8075F7287CA50D00CF6237 /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8075F6287CA50C00CF6237 /* Blur.swift */; };
+		FA8075FC287CAEA500CF6237 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = FA8075FB287CAEA500CF6237 /* BottomSheet */; };
+		FA807600287D78EC00CF6237 /* NamingProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8075FF287D78EB00CF6237 /* NamingProduct.swift */; };
+		FAC7BEED28880E6200776927 /* CommentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7BEEC28880E6200776927 /* CommentCard.swift */; };
+		FAC7BEEF28880EA900776927 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7BEEE28880EA900776927 /* Comment.swift */; };
+		FAC7BEF12888372A00776927 /* CommentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7BEF02888372A00776927 /* CommentManager.swift */; };
+		FAC7BEF328883A4900776927 /* CommentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7BEF228883A4900776927 /* CommentList.swift */; };
+		FAC7BEF52888591F00776927 /* AddComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7BEF42888591F00776927 /* AddComment.swift */; };
+		FAC7BEF72889B4D100776927 /* EllipsisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7BEF62889B4D000776927 /* EllipsisView.swift */; };
+		FAC7BEFA288AA2FB00776927 /* DeleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7BEF9288AA2FB00776927 /* DeleteView.swift */; };
+		FAC7BEFD2893F5FE00776927 /* GetStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7BEFC2893F5FE00776927 /* GetStarted.swift */; };
+		FAC7BEFF2894327C00776927 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7BEFE2894327C00776927 /* LoginPage.swift */; };
+		FAC7BF01289433EF00776927 /* LoginPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7BF00289433EF00776927 /* LoginPageModel.swift */; };
+		FAC7BF03289435A400776927 /* CustomCornens.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7BF02289435A300776927 /* CustomCornens.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA801602287F246E00D31B2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA7FCEAB2874724700814D89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA7FCEB22874724700814D89;
+			remoteInfo = SweaterShopDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA171F8928AF9DEA00C4C587 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA171F9128B2BAE900C4C587 /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
+		FA171F9328B2C97F00C4C587 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		FA171F9528B2D5B900C4C587 /* MainTabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarModel.swift; sourceTree = "<group>"; };
+		FA171F9728B37C6000C4C587 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		FA171F9928B37D9F00C4C587 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		FA171F9B28B393AB00C4C587 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		FA7223D32880766000602F99 /* Clients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clients.swift; sourceTree = "<group>"; };
+		FA7223D52880769B00602F99 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		FA7223D72880899A00602F99 /* ConteinerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConteinerView.swift; sourceTree = "<group>"; };
+		FA7223D9288089F900602F99 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		FA72242328816C0A00602F99 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		FA72242528816CAA00602F99 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		FA7FCEB32874724700814D89 /* SweaterShopDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweaterShopDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7FCEB62874724700814D89 /* SweaterShopDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweaterShopDemoApp.swift; sourceTree = "<group>"; };
+		FA7FCEB82874724700814D89 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		FA7FCEBA2874724900814D89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA7FCEBD2874724900814D89 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA7FCEC528747E2300814D89 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		FA7FCEC8287481FF00814D89 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		FA7FCECB2874B39000814D89 /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
+		FA7FCECD2874B64A00814D89 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		FA7FCECF2874B73B00814D89 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		FA7FCED12874BAE800814D89 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		FA8015FE287F246E00D31B2C /* SweaterShopDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweaterShopDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA80161628805A5700D31B2C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA8075F0287C6E2600CF6237 /* CertainSweater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertainSweater.swift; sourceTree = "<group>"; };
+		FA8075F2287CA3F100CF6237 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		FA8075F4287CA4BB00CF6237 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FA8075F6287CA50C00CF6237 /* Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
+		FA8075FF287D78EB00CF6237 /* NamingProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamingProduct.swift; sourceTree = "<group>"; };
+		FAC7BEEC28880E6200776927 /* CommentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCard.swift; sourceTree = "<group>"; };
+		FAC7BEEE28880EA900776927 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		FAC7BEF02888372A00776927 /* CommentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentManager.swift; sourceTree = "<group>"; };
+		FAC7BEF228883A4900776927 /* CommentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentList.swift; sourceTree = "<group>"; };
+		FAC7BEF42888591F00776927 /* AddComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddComment.swift; sourceTree = "<group>"; };
+		FAC7BEF62889B4D000776927 /* EllipsisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllipsisView.swift; sourceTree = "<group>"; };
+		FAC7BEF9288AA2FB00776927 /* DeleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteView.swift; sourceTree = "<group>"; };
+		FAC7BEFC2893F5FE00776927 /* GetStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStarted.swift; sourceTree = "<group>"; };
+		FAC7BEFE2894327C00776927 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		FAC7BF00289433EF00776927 /* LoginPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageModel.swift; sourceTree = "<group>"; };
+		FAC7BF02289435A300776927 /* CustomCornens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCornens.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA7FCEB02874724700814D89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8075FC287CAEA500CF6237 /* BottomSheet in Frameworks */,
+				FA8016132880590C00D31B2C /* FirebaseAuth in Frameworks */,
+				FA8016152880590C00D31B2C /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA8015FB287F246E00D31B2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA7224272881758300602F99 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FA72242328816C0A00602F99 /* TabBar.swift */,
+				FA7FCEB82874724700814D89 /* MainPage.swift */,
+				FA72242528816CAA00602F99 /* AccountView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		FA7FCEAA2874724700814D89 = {
+			isa = PBXGroup;
+			children = (
+				FA7FCEB52874724700814D89 /* SweaterShopDemo */,
+				FA7FCEB42874724700814D89 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA7FCEB42874724700814D89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA7FCEB32874724700814D89 /* SweaterShopDemo.app */,
+				FA8015FE287F246E00D31B2C /* SweaterShopDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA7FCEB52874724700814D89 /* SweaterShopDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FA7FCEB62874724700814D89 /* SweaterShopDemoApp.swift */,
+				FA7FCECA2874883200814D89 /* Views */,
+				FA7FCEC7287481E700814D89 /* Components */,
+				FA7FCEC428747E0700814D89 /* Models */,
+				FAC7BEF8288AA28900776927 /* Managers */,
+				FA7FCEBA2874724900814D89 /* Assets.xcassets */,
+				FA80161628805A5700D31B2C /* GoogleService-Info.plist */,
+				FA7FCEBC2874724900814D89 /* Preview Content */,
+				FA7223D72880899A00602F99 /* ConteinerView.swift */,
+				FA7223D9288089F900602F99 /* Session.swift */,
+				FAC7BEF9288AA2FB00776927 /* DeleteView.swift */,
+				FA171F8928AF9DEA00C4C587 /* ContentView.swift */,
+			);
+			path = SweaterShopDemo;
+			sourceTree = "<group>";
+		};
+		FA7FCEBC2874724900814D89 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FA7FCEBD2874724900814D89 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA7FCEC428747E0700814D89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA7FCEC528747E2300814D89 /* Product.swift */,
+				FA7223D32880766000602F99 /* Clients.swift */,
+				FA8075F4287CA4BB00CF6237 /* Extensions.swift */,
+				FA8075F6287CA50C00CF6237 /* Blur.swift */,
+				FAC7BEEE28880EA900776927 /* Comment.swift */,
+				FA171F9728B37C6000C4C587 /* UserModel.swift */,
+				FA171F9B28B393AB00C4C587 /* ProfileViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA7FCEC7287481E700814D89 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA7FCEC8287481FF00814D89 /* ProductCard.swift */,
+				FA7FCECB2874B39000814D89 /* CartButton.swift */,
+				FA7FCED12874BAE800814D89 /* ProductRow.swift */,
+				FA8075F0287C6E2600CF6237 /* CertainSweater.swift */,
+				FA8075FF287D78EB00CF6237 /* NamingProduct.swift */,
+				FAC7BEEC28880E6200776927 /* CommentCard.swift */,
+				FAC7BEF228883A4900776927 /* CommentList.swift */,
+				FAC7BEF42888591F00776927 /* AddComment.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FA7FCECA2874883200814D89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAC7BEFC2893F5FE00776927 /* GetStarted.swift */,
+				FAC7BEFE2894327C00776927 /* LoginPage.swift */,
+				FA7224272881758300602F99 /* TabBar */,
+				FA7FCECD2874B64A00814D89 /* CartView.swift */,
+				FA8075F2287CA3F100CF6237 /* CommentView.swift */,
+				FAC7BEF62889B4D000776927 /* EllipsisView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAC7BEF8288AA28900776927 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FAC7BF00289433EF00776927 /* LoginPageModel.swift */,
+				FA171F9528B2D5B900C4C587 /* MainTabBarModel.swift */,
+				FAC7BF02289435A300776927 /* CustomCornens.swift */,
+				FA171F9328B2C97F00C4C587 /* AuthModel.swift */,
+				FA7223D52880769B00602F99 /* DataManager.swift */,
+				FA7FCECF2874B73B00814D89 /* CartManager.swift */,
+				FAC7BEF02888372A00776927 /* CommentManager.swift */,
+				FA171F9128B2BAE900C4C587 /* AccountManager.swift */,
+				FA171F9928B37D9F00C4C587 /* DatabaseManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA7FCEB22874724700814D89 /* SweaterShopDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA7FCEC12874724900814D89 /* Build configuration list for PBXNativeTarget "SweaterShopDemo" */;
+			buildPhases = (
+				FA7FCEAF2874724700814D89 /* Sources */,
+				FA7FCEB02874724700814D89 /* Frameworks */,
+				FA7FCEB12874724700814D89 /* Resources */,
+				FAF4E4BF28B684F100A6FC20 /* Crashlytics */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SweaterShopDemo;
+			packageProductDependencies = (
+				FA8075FB287CAEA500CF6237 /* BottomSheet */,
+				FA8016122880590C00D31B2C /* FirebaseAuth */,
+				FA8016142880590C00D31B2C /* FirebaseFirestore */,
+			);
+			productName = SweaterShopDemo;
+			productReference = FA7FCEB32874724700814D89 /* SweaterShopDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA8015FD287F246E00D31B2C /* SweaterShopDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA801604287F246E00D31B2C /* Build configuration list for PBXNativeTarget "SweaterShopDemoTests" */;
+			buildPhases = (
+				FA8015FA287F246E00D31B2C /* Sources */,
+				FA8015FB287F246E00D31B2C /* Frameworks */,
+				FA8015FC287F246E00D31B2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA801603287F246E00D31B2C /* PBXTargetDependency */,
+			);
+			name = SweaterShopDemoTests;
+			productName = SweaterShopDemoTests;
+			productReference = FA8015FE287F246E00D31B2C /* SweaterShopDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA7FCEAB2874724700814D89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					FA7FCEB22874724700814D89 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					FA8015FD287F246E00D31B2C = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = FA7FCEB22874724700814D89;
+					};
+				};
+			};
+			buildConfigurationList = FA7FCEAE2874724700814D89 /* Build configuration list for PBXProject "SweaterShopDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA7FCEAA2874724700814D89;
+			packageReferences = (
+				FA8075FA287CAEA500CF6237 /* XCRemoteSwiftPackageReference "BottomSheet" */,
+				FA8016112880590C00D31B2C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = FA7FCEB42874724700814D89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA7FCEB22874724700814D89 /* SweaterShopDemo */,
+				FA8015FD287F246E00D31B2C /* SweaterShopDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA7FCEB12874724700814D89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7FCEBE2874724900814D89 /* Preview Assets.xcassets in Resources */,
+				FA7FCEBB2874724900814D89 /* Assets.xcassets in Resources */,
+				FA80161728805A5700D31B2C /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA8015FC287F246E00D31B2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FAF4E4BF28B684F100A6FC20 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Crashlytics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA7FCEAF2874724700814D89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7FCECE2874B64A00814D89 /* CartView.swift in Sources */,
+				FA8075F1287C6E2700CF6237 /* CertainSweater.swift in Sources */,
+				FA7223D82880899A00602F99 /* ConteinerView.swift in Sources */,
+				FAC7BEFF2894327C00776927 /* LoginPage.swift in Sources */,
+				FA7FCEB92874724700814D89 /* MainPage.swift in Sources */,
+				FA7FCED02874B73B00814D89 /* CartManager.swift in Sources */,
+				FAC7BEFD2893F5FE00776927 /* GetStarted.swift in Sources */,
+				FAC7BEF12888372A00776927 /* CommentManager.swift in Sources */,
+				FA171F9828B37C6000C4C587 /* UserModel.swift in Sources */,
+				FAC7BEF72889B4D100776927 /* EllipsisView.swift in Sources */,
+				FAC7BEF328883A4900776927 /* CommentList.swift in Sources */,
+				FA7223D62880769B00602F99 /* DataManager.swift in Sources */,
+				FA171F8A28AF9DEA00C4C587 /* ContentView.swift in Sources */,
+				FAC7BEED28880E6200776927 /* CommentCard.swift in Sources */,
+				FA7FCEB72874724700814D89 /* SweaterShopDemoApp.swift in Sources */,
+				FAC7BEEF28880EA900776927 /* Comment.swift in Sources */,
+				FA7FCED22874BAE800814D89 /* ProductRow.swift in Sources */,
+				FA8075F7287CA50D00CF6237 /* Blur.swift in Sources */,
+				FA7223DA288089F900602F99 /* Session.swift in Sources */,
+				FA7FCEC628747E2300814D89 /* Product.swift in Sources */,
+				FA7FCEC9287481FF00814D89 /* ProductCard.swift in Sources */,
+				FAC7BEFA288AA2FB00776927 /* DeleteView.swift in Sources */,
+				FA8075F3287CA3F100CF6237 /* CommentView.swift in Sources */,
+				FAC7BF03289435A400776927 /* CustomCornens.swift in Sources */,
+				FA171F9228B2BAEA00C4C587 /* AccountManager.swift in Sources */,
+				FA171F9628B2D5B900C4C587 /* MainTabBarModel.swift in Sources */,
+				FA171F9C28B393AE00C4C587 /* ProfileViewModel.swift in Sources */,
+				FA8075F5287CA4BB00CF6237 /* Extensions.swift in Sources */,
+				FA807600287D78EC00CF6237 /* NamingProduct.swift in Sources */,
+				FA171F9A28B37D9F00C4C587 /* DatabaseManager.swift in Sources */,
+				FAC7BEF52888591F00776927 /* AddComment.swift in Sources */,
+				FA7223D42880766000602F99 /* Clients.swift in Sources */,
+				FAC7BF01289433EF00776927 /* LoginPageModel.swift in Sources */,
+				FA72242628816CAA00602F99 /* AccountView.swift in Sources */,
+				FA7FCECC2874B39000814D89 /* CartButton.swift in Sources */,
+				FA72242428816C0A00602F99 /* TabBar.swift in Sources */,
+				FA171F9428B2C97F00C4C587 /* AuthModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA8015FA287F246E00D31B2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA801603287F246E00D31B2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA7FCEB22874724700814D89 /* SweaterShopDemo */;
+			targetProxy = FA801602287F246E00D31B2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FA7FCEBF2874724900814D89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA7FCEC02874724900814D89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA7FCEC22874724900814D89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SweaterShopDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 4ZN626CZK5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.designcode.SweaterShopDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA7FCEC32874724900814D89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SweaterShopDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 4ZN626CZK5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.designcode.SweaterShopDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA801605287F246E00D31B2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4ZN626CZK5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.SweaterShopDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SweaterShopDemo.app/SweaterShopDemo";
+			};
+			name = Debug;
+		};
+		FA801606287F246E00D31B2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4ZN626CZK5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.SweaterShopDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SweaterShopDemo.app/SweaterShopDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA7FCEAE2874724700814D89 /* Build configuration list for PBXProject "SweaterShopDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7FCEBF2874724900814D89 /* Debug */,
+				FA7FCEC02874724900814D89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA7FCEC12874724900814D89 /* Build configuration list for PBXNativeTarget "SweaterShopDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7FCEC22874724900814D89 /* Debug */,
+				FA7FCEC32874724900814D89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA801604287F246E00D31B2C /* Build configuration list for PBXNativeTarget "SweaterShopDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA801605287F246E00D31B2C /* Debug */,
+				FA801606287F246E00D31B2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA8016112880590C00D31B2C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		FA8075FA287CAEA500CF6237 /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Wouter125/BottomSheet";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA8016122880590C00D31B2C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA8016112880590C00D31B2C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		FA8016142880590C00D31B2C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA8016112880590C00D31B2C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		FA8075FB287CAEA500CF6237 /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA8075FA287CAEA500CF6237 /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FA7FCEAB2874724700814D89 /* Project object */;
+}
